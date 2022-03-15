@@ -15,6 +15,7 @@ export class AppComponent {
 ];
 
 personaAgregada(persona: Persona){
+  console.log("personaAgregada");
   this.personas.push( persona );
 }
 
