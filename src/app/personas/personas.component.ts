@@ -22,7 +22,7 @@ export class PersonasComponent implements OnInit {
    ngOnInit(): void {
     this.personasService.obtenerPersonas()
     .subscribe(
-      (personas: Persona[]) => {
+      (personas) => {
         this.personas = personas;
         this.personasService.setPersonas(personas);
       } 
